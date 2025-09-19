@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliPrep | Technical Interview</title>
+  <link rel="stylesheet" href="interview.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1><i class="fa-solid fa-brain"></i> Aptitude Test</h1>
+    <div class="topnav-right">
+      <a href="index.html" class="logout"><i class="fa-solid fa-house"></i> Return Home</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Instructions -->
+    <section>
+      <h2><i class="fas fa-info-circle"></i> Instructions</h2>
+      <p>Answer the following technical questions to the best of your ability. Write detailed answers in the text boxes provided.</p>
+      <p><i class="fas fa-clock"></i> Time per question: <span id="timer">10:00</span></p>
+    </section>
+
+    <!-- Questions -->
+    <section>
+      <h2><i class="fas fa-question-circle"></i> Questions</h2>
+      <form id="technical-interview-form">
+        <ol>
+          <li>
+            <p>Explain the difference between HTTP and HTTPS.</p>
+            <textarea name="q1" rows="3" placeholder="Your answer..." required></textarea>
+          </li>
+          <li>
+            <p>What is the purpose of a database index?</p>
+            <textarea name="q2" rows="3" placeholder="Your answer..." required></textarea>
+          </li>
+          <li>
+            <p>Describe the concept of object-oriented programming.</p>
+            <textarea name="q3" rows="3" placeholder="Your answer..." required></textarea>
+          </li>
+        </ol>
+
+        <!-- Controls -->
+        <section class="controls">
+          <button type="reset"><i class="fas fa-redo"></i> Reset</button>
+          <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+        </section>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

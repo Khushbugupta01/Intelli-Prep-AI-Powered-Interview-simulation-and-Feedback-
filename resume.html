@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliPrep | Resume</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2><i class="fa-solid fa-graduation-cap"></i> IntelliPrep</h2>
+    <nav>
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="dashboard.html"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
+      <a href="interviews.html"><i class="fa-solid fa-comments"></i> Interviews</a>
+      <a href="feedback.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+      <a href="resume.html" class="active"><i class="fa-solid fa-file-lines"></i> Resume</a>
+      <a href="achievements.html"><i class="fa-solid fa-trophy"></i> Achievements</a>
+      <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!-- Top Navbar -->
+    <header class="topnav">
+      <h1><i class="fa-solid fa-file-lines"></i> Resume</h1>
+      <div class="topnav-right">
+        <a href="notify.html" class="notify"><i class="fa-solid fa-bell"></i></a>
+        <a href="profile.html" class="user"><i class="fa-solid fa-user"></i> Khushbu Gupta</a>
+        <a href="index.html" class="logout"><i class="fa-solid fa-right-from-bracket"></i> Return Home</a>
+      </div>
+    </header>
+
+    <!-- Resume Page Content -->
+    <main class="content resume-content">
+
+      <!-- Upload Section -->
+      <section class="resume-upload card">
+        <h2><i class="fa-solid fa-upload"></i> Upload Your Resume</h2>
+        <form>
+          <input type="file" name="resume" accept=".pdf,.doc,.docx">
+          <button type="submit"></button> Upload & Analyze</button>
+        </form>
+        <p class="note">* Only PDF or DOCX formats supported</p>
+      </section>
+
+      <!-- Analysis Section -->
+      <section class="resume-analysis card">
+        <h2><i class="fa-solid fa-robot"></i> AI Resume Analysis</h2>
+        <p><strong><i class="fa-solid fa-star"></i> Resume Score:</strong> 78 / 100</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check" style="color:green;"></i> Good use of technical keywords</li>
+          <li><i class="fa-solid fa-circle-exclamation" style="color:orange;"></i> Missing a clear summary section</li>
+          <li><i class="fa-solid fa-lightbulb" style="color:gold;"></i> Add measurable achievements</li>
+          <li><i class="fa-solid fa-book" style="color:blue;"></i> Education details are clear</li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IntelliPrep | Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2><i class="fa-solid fa-lightbulb"></i> IntelliPrep</h2>
+    <nav>
+      <a href="index.html" class="home-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="dashboard.html" class="active"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+      <a href="interviews.html"><i class="fa-solid fa-comments"></i> Interviews</a>
+      <a href="feedback.html"><i class="fa-solid fa-star"></i> Feedback</a>
+      <a href="resume.html"><i class="fa-solid fa-file-lines"></i> Resume</a>
+      <a href="achievements.html"><i class="fa-solid fa-trophy"></i> Achievements</a>
+      <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Wrapper -->
+  <div class="main-wrapper">
+
+    <!-- Top Navbar -->
+    <header class="topnav">
+      <h1><i class="fa-solid fa-gauge"></i> Dashboard</h1>
+      <div class="topnav-right">
+        <a href="notify.html" class="notify"><i class="fa-solid fa-bell"></i></a>
+        <a href="profile.html" class="user"><i class="fa-solid fa-user"></i> Khushbu Gupta</a>
+        <a href="index.html" class="logout"><i class="fa-solid fa-right-from-bracket"></i> Return Home</a>
+      </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <main class="content">
+
+      <!-- Profile Card -->
+      <section class="profile-card">
+        <img src="KhushbuGuptaPhoto.jpeg" alt="Sarah Johnson">
+        <div class="profile-info">
+          <h2><i class="fa-solid fa-user-tie"></i> Khushbu Gupta</h2>
+          <p>Aspiring Software Engineer</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+          <small><i class="fa-solid fa-chart-line"></i> Preparation Progress: 70%</small>
+        </div>
+      </section>
+
+      <!-- Stats Cards -->
+      <section class="card-grid">
+        <div class="card gradient-blue">
+          <h3><i class="fa-solid fa-clipboard-check"></i> Completed Interviews</h3>
+          <p>12</p>
+        </div>
+        <div class="card gradient-green">
+          <h3><i class="fa-solid fa-percent"></i> Average Score</h3>
+          <p>85%</p>
+        </div>
+        <div class="card gradient-orange">
+          <h3><i class="fa-solid fa-spinner"></i> Ongoing Sessions</h3>
+          <p>3</p>
+        </div>
+        <div class="card gradient-purple">
+          <h3><i class="fa-solid fa-trophy"></i> Achievements</h3>
+          <p>5 Badges</p>
+        </div>
+      </section>
+
+      <!-- Resume Section -->
+      <section class="resume">
+        <h2>Resume Analysis</h2>
+        <div class="resume-container">
+          <div class="resume-upload">
+            <h3><i class="fa-solid fa-upload"></i> Upload Your Resume</h3>
+            <form>
+              <input type="file" name="resume" accept=".pdf,.doc,.docx">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass-chart"></i> Upload & Analyze</button>
+            </form>
+            <p class="note"><i class="fa-solid fa-circle-info"></i> *Only PDF or DOCX formats supported</p>
+          </div>
+          <div class="resume-analysis">
+            <h3><i class="fa-solid fa-robot"></i> AI Analysis</h3>
+            <p><strong>Resume Score:</strong> 78/100</p>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Good use of technical keywords</li>
+              <li><i class="fa-solid fa-xmark"></i> Missing a clear summary section</li>
+              <li><i class="fa-solid fa-lightbulb"></i> Add measurable achievements</li>
+              <li><i class="fa-solid fa-check"></i> Education details are clear</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Analytics -->
+      <section class="analytics">
+        <h2>Performance Overview</h2>
+        <div class="analytics-grid">
+          <div class="analytic-box"><h3>Week 1</h3><p>70%</p></div>
+          <div class="analytic-box"><h3>Week 2</h3><p>78%</p></div>
+          <div class="analytic-box"><h3>Week 3</h3><p>85%</p></div>
+          <div class="analytic-box"><h3>Week 4</h3><p>90%</p></div>
+        </div>
+      </section>
+
+      <!-- Recent Activity -->
+      <section class="activity">
+        <h2>Recent Activity</h2>
+        <ul>
+          <li><i class="fa-solid fa-check-circle"></i> Completed Technical Mock Interview (Sep 1, 2025)</li>
+          <li><i class="fa-solid fa-comment-dots"></i> Received feedback: "Strong problem-solving" (Aug 29, 2025)</li>
+          <li><i class="fa-solid fa-arrow-trend-up"></i> Progress improved by 10% in Week 3 (Aug 25, 2025)</li>
+        </ul>
+      </section>
+
+      <!-- Upcoming Interviews -->
+      <section class="upcoming">
+        <h2>Upcoming Interviews</h2>
+        <div class="upcoming-list">
+          <div class="up-item">
+            <h3><i class="fa-solid fa-diagram-project"></i> System Design</h3>
+            <p>Sep 7, 2025 - 3:00 PM</p>
+          </div>
+          <div class="up-item">
+            <h3><i class="fa-solid fa-user-tie"></i> HR Interview</h3>
+            <p>Sep 9, 2025 - 5:00 PM</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements -->
+      <section class="badges">
+        <h2>Achievements</h2>
+        <div class="badge-grid">
+          <div class="badge"><i class="fa-solid fa-check-circle"></i> Consistency</div>
+          <div class="badge"><i class="fa-solid fa-bolt"></i> Top Performer</div>
+          <div class="badge"><i class="fa-solid fa-graduation-cap"></i> Quick Learner</div>
+          <div class="badge"><i class="fa-solid fa-bullseye"></i> Accuracy Master</div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

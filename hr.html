@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliPrep | HR Interview</title>
+  <link rel="stylesheet" href="interview.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1><i class="fa-solid fa-brain"></i> Aptitude Test</h1>
+    <div class="topnav-right">
+      <a href="index.html" class="logout"><i class="fa-solid fa-house"></i> Return Home</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Introduction -->
+    <section>
+      <h2><i class="fas fa-info-circle"></i> Introduction</h2>
+      <p>Welcome to your HR Interview session! Answer the questions honestly and confidently.</p>
+    </section>
+
+    <!-- Questions Section -->
+    <section>
+      <h2><i class="fas fa-question-circle"></i> Sample Questions</h2>
+      <form id="hr-interview-form">
+        <ol>
+          <li>
+            <p>Tell me about yourself.</p>
+            <textarea name="q1" rows="3" placeholder="Your answer here..." required></textarea>
+          </li>
+          <li>
+            <p>What are your strengths and weaknesses?</p>
+            <textarea name="q2" rows="3" placeholder="Your answer here..." required></textarea>
+          </li>
+          <li>
+            <p>Why do you want to work in this company?</p>
+            <textarea name="q3" rows="3" placeholder="Your answer here..." required></textarea>
+          </li>
+          <li>
+            <p>Describe a challenging situation you faced and how you resolved it.</p>
+            <textarea name="q4" rows="3" placeholder="Your answer here..." required></textarea>
+          </li>
+        </ol>
+
+        <!-- Timer -->
+        <section>
+          <h2><i class="fas fa-stopwatch"></i> Timer</h2>
+          <p>Time remaining: <span id="timer">15:00</span></p>
+        </section>
+
+        <!-- Buttons -->
+        <section class="buttons">
+          <button type="reset"><i class="fas fa-redo"></i> Reset Answers</button>
+          <button type="submit"><i class="fas fa-paper-plane"></i> Submit Interview</button>
+        </section>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

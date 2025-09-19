@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliPrep | Interviews</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body> 
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2><i class="fa-solid fa-graduation-cap"></i> IntelliPrep</h2>
+    <nav>
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="dashboard.html"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
+      <a href="interviews.html" class="active"><i class="fa-solid fa-comments"></i> Interviews</a>
+      <a href="feedback.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+      <a href="resume.html"><i class="fa-solid fa-file-lines"></i> Resume</a>
+      <a href="achievements.html"><i class="fa-solid fa-trophy"></i> Achievements</a>
+      <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-wrapper">
+    <!-- Top Navigation -->
+    <header class="topnav">
+      <h1><i class="fa-solid fa-briefcase"></i> Interviews</h1>
+      <div class="topnav-right">
+        <a href="notify.html" class="notif"><i class="fa-solid fa-bell"></i></a>
+        <a href="profile.html" class="user"><i class="fa-solid fa-user"></i> Khushbu Gupta</a>
+        <a href="index.html" class="logout"><i class="fa-solid fa-right-from-bracket"></i> Return Home</a>
+      </div>
+    </header>
+
+    <!-- Main Interview Hub Content -->
+    <main class="interview-content">
+
+      <!-- Intro -->
+      <section class="intro">
+        <h2><i class="fa-solid fa-comments"></i> Welcome to Interview Practice</h2>
+        <p>Sharpen your skills with different types of interviews. Choose a mode below to get started.</p>
+      </section>
+
+      <!-- Quick Stats -->
+      <section class="stats">
+        <div class="stat-card">
+          <i class="fa-solid fa-clipboard-check"></i>
+          <h3>12</h3>
+          <p>Interviews Completed</p>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-star"></i>
+          <h3>85%</h3>
+          <p>Average Score</p>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-fire"></i>
+          <h3>5 Days</h3>
+          <p>Current Streak</p>
+        </div>
+      </section>
+
+      <!-- Interview Types -->
+      <section class="interview-types">
+        <h2><i class="fa-solid fa-list-check"></i> Choose Interview Type</h2>
+        <div class="cards">
+          <a href="hr.html" class="card">
+            <i class="fa-solid fa-users"></i>
+            <h3>HR Interview</h3>
+            <p>Test communication and behavioral skills.</p>
+          </a>
+          <a href="technical.html" class="card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Technical Interview</h3>
+            <p>Answer coding and problem-solving questions.</p>
+          </a>
+          <a href="aptitude.html" class="card">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Aptitude Test</h3>
+            <p>Sharpen your logical and quantitative skills.</p>
+          </a>
+          <a href="mock.html" class="card">
+            <i class="fa-solid fa-microphone"></i>
+            <h3>Mock Interview</h3>
+            <p>Simulate a real full-length interview.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Performance Overview -->
+      <section class="performance">
+        <h2><i class="fa-solid fa-chart-line"></i> Performance Overview</h2>
+        <p>Your progress toward becoming interview-ready:</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 70%;">70%</div>
+        </div>
+      </section>
+
+      <!-- Upcoming Sessions -->
+      <section class="upcoming">
+        <h2><i class="fa-solid fa-calendar-check"></i> Upcoming Sessions</h2>
+        <ul>
+          <li><i class="fa-solid fa-users"></i> HR Interview scheduled for <b>10th Sept, 5 PM</b></li>
+          <li><i class="fa-solid fa-laptop-code"></i> Technical Interview scheduled for <b>12th Sept, 6 PM</b></li>
+          <li><i class="fa-solid fa-brain"></i> Aptitude Test scheduled for <b>14th Sept, 4 PM</b></li>
+        </ul>
+      </section>
+
+      <!-- Recent History -->
+      <section class="history">
+        <h2><i class="fa-solid fa-clock-rotate-left"></i> Recent Interview History</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><i class="fa-solid fa-calendar"></i> Date</th>
+              <th><i class="fa-solid fa-briefcase"></i> Type</th>
+              <th><i class="fa-solid fa-star"></i> Score</th>
+              <th><i class="fa-solid fa-circle-info"></i> Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5th Sept</td>
+              <td>HR Interview</td>
+              <td>80%</td>
+              <td><i class="fa-solid fa-circle-check" style="color:green;"></i> Completed</td>
+            </tr>
+            <tr>
+              <td>3rd Sept</td>
+              <td>Technical</td>
+              <td>75%</td>
+              <td><i class="fa-solid fa-circle-check" style="color:green;"></i> Completed</td>
+            </tr>
+            <tr>
+              <td>1st Sept</td>
+              <td>Aptitude</td>
+              <td>68%</td>
+              <td><i class="fa-solid fa-circle-xmark" style="color:red;"></i> Incomplete</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Video & Voice Test -->
+      <section class="test-tools">
+        <h2><i class="fa-solid fa-video"></i> Camera & Mic Test</h2>
+        <div class="test-box">
+          <video autoplay muted></video>
+          <p><i class="fa-solid fa-microphone"></i> Speak something to test your mic...</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

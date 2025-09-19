@@ -1,0 +1,128 @@
+/* General Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.topnav-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.topnav-right a:hover {
+    color: #f1c40f;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Instructions Section */
+.instructions h2 {
+    font-size: 20px;
+    color: #2c3e50;
+    border-left: 5px solid #f1c40f;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.instructions ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+.instructions ul li {
+    margin-bottom: 8px;
+}
+
+/* Questions Section */
+.aptitude-questions h2, .mock-questions h2, .technical-questions h2, .hr-questions h2 {
+    font-size: 20px;
+    color: #2c3e50;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.aptitude-questions ol, .mock-questions ol, .technical-questions ol, .hr-questions ol {
+    margin-left: 20px;
+}
+
+.aptitude-questions li, .mock-questions li, .technical-questions li, .hr-questions li {
+    margin-bottom: 15px;
+}
+
+.aptitude-questions input, .mock-questions input, .technical-questions input, .hr-questions input {
+    width: 60%;
+    padding: 7px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.test-buttons {
+    margin-top: 20px;
+}
+
+.test-buttons button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.test-buttons button i {
+    margin-right: 5px;
+}
+
+.test-buttons button:hover {
+    background-color: #f1c40f;
+    color: #2c3e50;
+}
+
+/* Hover effect for question inputs */
+.aptitude-questions input:hover, .mock-questions input:hover, .technical-questions input:hover, .hr-questions input:hover {
+    border-color: #3498db;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .aptitude-questions input, .mock-questions input, .technical-questions input, .hr-questions input {
+        width: 100%;
+    }
+}

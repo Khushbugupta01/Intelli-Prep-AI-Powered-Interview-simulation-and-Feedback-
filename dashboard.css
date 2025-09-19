@@ -1,0 +1,885 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #1a2533;
+  color: #fff;
+  padding: 25px 20px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  color: #f1c40f;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.sidebar nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 14px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: #f1c40f;
+  color: #1a2533;
+  font-weight: bold;
+}
+
+/* Main Wrapper */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Navbar */
+.topnav {
+  background: #fff;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.topnav h1 {
+  font-size: 22px;
+  color: #1a2533;
+}
+
+.topnav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.topnav-right .notify{
+    text-decoration: none;
+    transition: 0.3s;
+}
+.topnav-right .user{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.topnav-right .logout {
+  background: #f1c40f;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1a2533;
+  transition: 0.3s;
+}
+
+.topnav-right .logout:hover {
+  background: #e67e22;
+  color: #fff;
+}
+
+/* Content Area */
+.content {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* space between sections */
+}
+
+/* Section Headings */
+.content h2 {
+  font-size: 22px;
+  color: #1a2533;
+  margin-bottom: 18px;   /* space between heading and content */
+  border-left: 5px solid #f1c40f;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+/* Profile Card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  gap: 25px;
+}
+
+.profile-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  border-radius: 6px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #3498db;
+}
+
+/* Stats Cards */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Gradient backgrounds */
+.gradient-blue { background: linear-gradient(135deg, #3498db, #2c3e50); }
+.gradient-green { background: linear-gradient(135deg, #27ae60, #145a32); }
+.gradient-orange { background: linear-gradient(135deg, #e67e22, #d35400); }
+.gradient-purple { background: linear-gradient(135deg, #9b59b6, #4a235a); }
+
+/* Resume Section */
+.resume {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.resume-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.resume-upload,
+.resume-analysis {
+  flex: 1;
+  min-width: 300px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resume-upload:hover,
+.resume-analysis:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.resume-upload h3,
+.resume-analysis h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.resume-upload form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resume-upload input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.resume-upload button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.resume-upload button:hover {
+  background: #2980b9;
+}
+
+.resume-upload .note {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+}
+
+.resume-analysis ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resume-analysis li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Analytics */
+.analytics-grid {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.analytic-box {
+  flex: 1;
+  min-width: 180px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Activity */
+.activity ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity li {
+  background: #fff;
+  padding: 15px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Upcoming Interviews */
+.upcoming-list {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.up-item {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Badges */
+.badge-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #f1c40f;
+  padding: 14px 22px;
+  border-radius: 22px;
+  font-weight: bold;
+  color: #1a2533;
+}
+/* ===========================
+   Feedback Page Styles
+   =========================== */
+
+/* Feedback Content Wrapper */
+.feedback-content {
+  padding: 20px;
+}
+
+/* Overall Summary Card */
+.summary-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Feedback Grid (Technical + HR Feedback) */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.feedback-box {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.feedback-box h3 {
+  margin-bottom: 12px;
+  color: #3498db;
+}
+
+.feedback-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feedback-box li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Skills Breakdown */
+.skills {
+  margin-bottom: 30px;
+}
+
+.skills h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 25px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  height: 22px;
+  font-size: 13px;
+  line-height: 22px;
+  color: white;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+  font-weight: bold;
+}
+
+/* AI Suggestions & Next Steps */
+.suggestions, .next-steps {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.suggestions h2, .next-steps h2 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.suggestions ul, .next-steps ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.suggestions li, .next-steps li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* ===========================
+   Resume Page Styles
+   =========================== */
+
+.resume-content {
+  padding: 10px;
+}
+
+/* Upload Section */
+.resume-upload {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.resume-upload h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.resume-upload form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resume-upload input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.resume-upload button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.resume-upload button:hover {
+  background: #2980b9;
+}
+
+.resume-upload .note {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+}
+
+/* Resume Analysis */
+.resume-analysis {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.resume-analysis h2 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.resume-analysis p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: bold;
+}
+
+.resume-analysis ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resume-analysis li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* ===========================
+   Achievements Page Styles
+   =========================== */
+
+.content-achievements {
+  padding: 20px;
+  display: grid;
+  gap: 24px;
+}
+
+/* Generic section card look */
+.content-achievements section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.content-achievements section h1 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 14px;
+}
+
+/* ===========================
+   Badge Showcase
+   =========================== */
+.badge .types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.badge .cards {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.badge .cards:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+}
+
+.badge .cards img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #eaeaea;
+}
+
+.badge .cards h4 {
+  font-size: 15px;
+  color: #34495e;
+  margin: 0;
+}
+
+/* ===========================
+   Milestones
+   =========================== */
+.Milestone ul {
+  list-style: none;     /* remove dots */
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.Milestone li {
+  background: #f6fff7;
+  border: 1px solid #d7f5da;
+  color: #2d6a32;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===========================
+   Locked Achievements
+   =========================== */
+.content-achievements section.locked ul {
+  list-style: none;     /* remove dots */
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.content-achievements section.locked li {
+  background: #f5f6f8;
+  border: 1px dashed #cfd6de;
+  color: #6b7280;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ===========================
+   Streaks
+   =========================== */
+.streaks {
+  background: linear-gradient(135deg, #fff7ed, #fffaf0);
+  border: 1px solid #fde4c9;
+}
+
+.streaks h1 {
+  color: #c2410c;
+}
+
+.streaks p {
+  margin: 0;
+  color: #7c2d12;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 640px) {
+  .content-achievements {
+    gap: 16px;
+  }
+  .badge .types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Settings Page*/
+/* ========== SETTINGS PAGE ========== */
+.settings-content {
+  padding: 20px;
+}
+
+.settings-content section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.settings-content h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #2c3e50;
+  border-left: 5px solid #f1c40f;
+  padding-left: 10px;
+}
+
+.settings-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-content ul li {
+  margin: 10px 0;
+}
+
+.settings-content ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3498db;
+  transition: color 0.3s;
+}
+
+.settings-content ul li a:hover {
+  color: #e67e22;
+}
+/* Sidebar spacing for main content */
+
+
+/* ==== Interviews Page ==== */
+/* ---------------- Interviews Page ---------------- */
+.interview-content {
+  padding: 20px;
+}
+
+.interview-content section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.interview-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Intro */
+.intro p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Stats Cards */
+.stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.stat-card {
+  flex: 1;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.stat-card i {
+  font-size: 28px;
+  color: #f1c40f;
+  margin-bottom: 8px;
+}
+.stat-card h3 {
+  font-size: 24px;
+  margin: 5px 0;
+  color: #2c3e50;
+}
+.stat-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Interview Types */
+.interview-types .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.card i {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Performance Progress Bar */
+.performance .progress-bar {
+  width: 100%;
+  background: #eaeaea;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.performance .progress {
+  height: 22px;
+  background: #f1c40f;
+  color: #2c3e50;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Upcoming Sessions */
+.upcoming ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.upcoming ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.upcoming ul li:last-child {
+  border-bottom: none;
+}
+
+/* History Table */
+.history table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.history table th,
+.history table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.history table th {
+  background: #2c3e50;
+  color: #fff;
+  font-weight: normal;
+}
+.history table tr:hover {
+  background: #f9f9f9;
+}
+
+/* Video & Mic Test */
+.test-tools .test-box {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.test-tools video {
+  width: 100%;
+  max-width: 400px;
+  height: 220px;
+  background: #000;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.test-tools p {
+  color: #555;
+  font-size: 14px;
+}

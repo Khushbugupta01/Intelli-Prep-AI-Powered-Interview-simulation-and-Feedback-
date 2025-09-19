@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliPrep | Mock Test</title>
+  <link rel="stylesheet" href="interview.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1><i class="fa-solid fa-clipboard-question"></i> Mock Test</h1>
+    <div class="topnav-right">
+      <a href="index.html" class="logout"><i class="fa-solid fa-house"></i> Return Home</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Timer Section -->
+    <section>
+      <h2><i class="fas fa-clock"></i> Timer</h2>
+      <p>Time remaining: <span id="timer">30:00</span></p>
+    </section>
+
+    <!-- Progress -->
+    <section>
+      <h2><i class="fas fa-tasks"></i> Progress</h2>
+      <p>Question 1 of 10</p>
+    </section>
+
+    <!-- Test Questions -->
+    <form id="mock-test-form">
+      <!-- Aptitude -->
+      <section>
+        <h3><i class="fas fa-brain"></i> Aptitude Questions</h3>
+        <p><strong>Q1:</strong> What is 12 + 15?</p>
+        <label><input type="radio" name="apt1" required> 25</label><br>
+        <label><input type="radio" name="apt1"> 27</label><br>
+        <label><input type="radio" name="apt1"> 30</label>
+
+        <p><strong>Q2:</strong> Which number comes next in the sequence: 2, 4, 8, 16, ...?</p>
+        <label><input type="radio" name="apt2" required> 18</label><br>
+        <label><input type="radio" name="apt2"> 32</label><br>
+        <label><input type="radio" name="apt2"> 24</label>
+      </section>
+
+      <!-- Technical -->
+      <section>
+        <h3><i class="fas fa-code"></i> Technical Questions</h3>
+        <p><strong>Q3:</strong> What does HTML stand for?</p>
+        <label><input type="radio" name="tech1" required> Hyper Text Markup Language</label><br>
+        <label><input type="radio" name="tech1"> Home Tool Markup Language</label><br>
+        <label><input type="radio" name="tech1"> Hyperlinks and Text Markup Language</label>
+
+        <p><strong>Q4:</strong> Which language is used for styling web pages?</p>
+        <label><input type="radio" name="tech2" required> HTML</label><br>
+        <label><input type="radio" name="tech2"> CSS</label><br>
+        <label><input type="radio" name="tech2"> JavaScript</label>
+      </section>
+
+      <!-- HR -->
+      <section>
+        <h3><i class="fas fa-user-tie"></i> HR Questions</h3>
+        <p><strong>Q5:</strong> How do you handle stressful situations?</p>
+        <label><input type="radio" name="hr1" required> I stay calm and prioritize tasks.</label><br>
+        <label><input type="radio" name="hr1"> I delegate everything.</label><br>
+        <label><input type="radio" name="hr1"> I avoid it.</label>
+
+        <p><strong>Q6:</strong> What motivates you at work?</p>
+        <label><input type="radio" name="hr2" required> Recognition and growth</label><br>
+        <label><input type="radio" name="hr2"> Salary only</label><br>
+        <label><input type="radio" name="hr2"> Nothing</label>
+      </section>
+
+      <!-- Buttons -->
+      <section class="buttons">
+        <button type="reset"><i class="fas fa-redo"></i> Reset Test</button>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Submit Test</button>
+      </section>
+    </form>
+  </main>
+
+</body>
+</html>
